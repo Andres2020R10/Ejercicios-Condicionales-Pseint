@@ -1,0 +1,18 @@
+Proceso Ascensor_Limite_Peso
+    Definir peso Como Real
+    Definir piso Como Entero
+    Definir limite Como Real
+
+    limite <- 150
+
+    Escribir "Ingrese su peso en kilogramos: "
+    Leer peso
+    Escribir "Ingrese el piso al que desea ir (del 1 al 10): "
+    Leer piso
+
+    Si peso <= limite Entonces
+        Escribir "El peso es adecuado. El ascensor se mueve al piso ", piso
+    SiNo
+        Escribir "El ascensor está sobrecargado. No puede moverse."
+    FinSi
+FinProceso

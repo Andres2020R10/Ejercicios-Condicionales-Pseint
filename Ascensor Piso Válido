@@ -1,0 +1,11 @@
+Proceso Ascensor_Piso_Valido
+    Definir piso Como Entero
+    Escribir "Ingrese el piso al que desea ir (del 1 al 10): "
+    Leer piso
+
+    Si piso >= 1 Y piso <= 10 Entonces
+        Escribir "El ascensor se mueve al piso ", piso
+    SiNo
+        Escribir "Error: el piso ingresado no es válido."
+    FinSi
+FinProceso

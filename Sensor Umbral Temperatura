@@ -1,0 +1,14 @@
+Proceso Sensor_Temperatura_Alerta
+    Definir temperatura, umbral Como Real
+
+    Escribir "Ingrese la temperatura actual: "
+    Leer temperatura
+    Escribir "Ingrese el umbral de alerta: "
+    Leer umbral
+
+    Si temperatura > umbral Entonces
+        Escribir "Alerta: la temperatura está por encima del umbral."
+    SiNo
+        Escribir "La temperatura es normal."
+    FinSi
+FinProceso

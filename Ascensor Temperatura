@@ -1,0 +1,20 @@
+Proceso Ascensor_Temperatura
+    Definir temperatura Como Real
+    Definir piso Como Entero
+
+    Escribir "Ingrese la temperatura ambiente: "
+    Leer temperatura
+
+    Si temperatura >= 18 Y temperatura <= 25 Entonces
+        Escribir "La temperatura es adecuada."
+        Escribir "Ingrese el piso al que desea ir (del 1 al 10): "
+        Leer piso
+        Si piso >= 1 Y piso <= 10 Entonces
+            Escribir "El ascensor se mueve al piso ", piso
+        SiNo
+            Escribir "Piso no válido."
+        FinSi
+    SiNo
+        Escribir "La temperatura no es adecuada. El ascensor no puede moverse."
+    FinSi
+FinProceso
